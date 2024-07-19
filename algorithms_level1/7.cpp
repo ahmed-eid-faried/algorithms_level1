@@ -8,7 +8,7 @@
 //	do {
 //		cout << "ENTER POSITIVE NUMBER: ";
 //		cin >> NUM;
-//	} while (NUM <= 0);
+//	} while (NUM <  0);
 //	return NUM;
 //}
 //float CalculateHalfOfNumber(int Number) {
