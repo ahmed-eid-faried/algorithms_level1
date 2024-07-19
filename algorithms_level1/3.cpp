@@ -4,8 +4,10 @@
 //
 //int ReadPositiveNumber() {
 //	int NUM;
-//	cout << "ENTER INTGER NUMBER: ";
-//	cin >> NUM;
+//	do {
+//		cout << "ENTER POSITIVE NUMBER: ";
+//		cin >> NUM;
+//	} while (NUM > 0);
 //	return NUM;
 //}
 //
