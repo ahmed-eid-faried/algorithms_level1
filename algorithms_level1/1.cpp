@@ -1,5 +1,8 @@
-//#include <iostream>
-//int main() {
-//	std::cout << "Mohammed";
-//	return 0;
-//}
+#include <iostream>
+void PrintName() {
+	std::cout << "Mohammed";
+}
+int main() {
+	PrintName();
+	return 0;
+}

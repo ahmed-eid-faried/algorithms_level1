@@ -1,36 +1,35 @@
 //#include <iostream>
 //using namespace std;
 //int main() {
-//	short int Mark1;
-//	short int Mark2;
-//	short int Mark3;
-//	float Average;
+//	int Num1;
+//	int Num2;
+// 
 //
 //	cout << "########################################################\n";
 //	cout << "########################################################\n";
-//	cout << "ENTER Mark1 : ";
-//	if (!(cin >> Mark1) || (Mark1 > 100)) {
+//	cout << "ENTER Num1 : ";
+//	if (!(cin >> Num1)) {
 //		cout << " invalid input" << endl;
 //		return 0;
 //	}
-//	cout << "ENTER Mark2: ";
-//	if (!(cin >> Mark2)||Mark2>100) {
+//	cout << "ENTER Num2: ";
+//	if (!(cin >> Num2)) {
 //		cout << " invalid input" << endl;
 //		return 0;
 //	}
-//	cout << "ENTER Mark3: ";
-//	if (!(cin >> Mark3)||Mark3>100) {
-//		cout << " invalid input" << endl;
-//		return 0;
-//	}
+// 
+//
 //	cout << "#####################-by-ahmed-mady-####################\n";
-//	Average = (Mark1 + Mark2 + Mark3) / 3;
-//	if (Average > 50) {
-//		cout << " PASS " << endl;
-//	}
-//	else {
-//		cout << " FAIL " << endl;
-//	}
+// 
+//
+//	cout <<"old:" << endl;
+//	cout << Num1 << endl;
+//	cout << Num2 << endl;
+//	cout << "########################################################\n";
+//	cout << "new:" << endl;
+//
+//	cout << Num2 << endl;
+//	cout << Num1 << endl;
 //
 //
 //	cout << "########################################################\n";

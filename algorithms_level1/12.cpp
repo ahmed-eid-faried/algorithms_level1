@@ -7,12 +7,12 @@
 //	cout << "########################################################\n";
 //	cout << "########################################################\n";
 //	cout << "ENTER Num1 : ";
-//	if (!(cin >> Num1) || (Num1 > 100)) {
+//	if (!(cin >> Num1)  ) {
 //		cout << " invalid input" << endl;
 //		return 0;
 //	}
 //	cout << "ENTER Num2: ";
-//	if (!(cin >> Num2) || Num2 > 100) {
+//	if (!(cin >> Num2)  ) {
 //		cout << " invalid input" << endl;
 //		return 0;
 //	}
