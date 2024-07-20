@@ -7,15 +7,19 @@
 //		cin >> NUM;
 //	} while (NUM < 0);
 //	return NUM;
-//} 
-//
-//double CalculateCircleArea(float  Radius) {
-//	const double Pi = 3.14159265359;
-//	return Pi * Radius * Radius;
 //}
 //
-//void PrintCircleArea(double CircleArea) {
-//	cout << "Triangle Area is " << CircleArea << endl;
+//void ReadRectangleData(float& Hieght, float& Base) {
+//	Hieght = ReadPositiveNumber("ENTER Hieght: ");
+//	Base = ReadPositiveNumber("ENTER Base: ");
+//}
+//
+//float CalculateCircleArea(float  Hieght, float  Base) {
+//	return 0.5 * Hieght * Base;
+//}
+//
+//void PrintRectangleArea(float RectangleArea) {
+//	cout << "Triangle Area is " << RectangleArea << endl;
 //}
 //
 //
@@ -23,7 +27,10 @@
 //	cout << "########################################################\n";
 //	cout << "#####################-by-ahmed-mady-####################\n";
 //	cout << "########################################################\n";
-//	PrintCircleArea(CalculateCircleArea(ReadPositiveNumber("Enter Radius: ")));
+//	float Hieght;
+//	float Base;
+//	ReadRectangleData(Hieght, Base);
+//	PrintRectangleArea(CalculateCircleArea(Hieght, Base));
 //	cout << "########################################################\n";
 //	cout << "########################################################\n";
 //	return 0;
