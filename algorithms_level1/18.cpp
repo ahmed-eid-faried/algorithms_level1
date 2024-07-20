@@ -17,8 +17,6 @@
 //void PrintCircleArea(double CircleArea) {
 //	cout << "Triangle Area is " << CircleArea << endl;
 //}
-//
-//
 //int main() {
 //	cout << "########################################################\n";
 //	cout << "#####################-by-ahmed-mady-####################\n";
