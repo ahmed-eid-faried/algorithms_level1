@@ -27,10 +27,10 @@
 //}
 //void PrintResult(bool IsAccepted) {
 //	if (IsAccepted) {
-//		cout << "YOU IS Hired" << endl;
+//		cout << "YOU ARE Hired" << endl;
 //	}
 //	else {
-//		cout << "YOU IS Rejected" << endl;
+//		cout << "YOU ARE Rejected" << endl;
 //	}
 //}
 //
