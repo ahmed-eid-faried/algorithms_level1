@@ -1,40 +1,39 @@
-//#include <iostream>
-//using namespace std;
-//int main() {
-//	int Num1;
-//	int Num2;
-//
-//
-//	cout << "########################################################\n";
-//	cout << "########################################################\n";
-//	cout << "ENTER Num1 : ";
-//	if (!(cin >> Num1)) {
-//		cout << " invalid input" << endl;
-//		return 0;
-//	}
-//	cout << "ENTER Num2: ";
-//	if (!(cin >> Num2)) {
-//		cout << " invalid input" << endl;
-//		return 0;
-//	}
-//
-//
-//	cout << "#####################-by-ahmed-mady-####################\n";
-//
-//
-//	cout << "old:" << endl;
-//	cout << Num1 << endl;
-//	cout << Num2 << endl;
-//	cout << "########################################################\n";
-//	cout << "new:" << endl;
-//
-//	cout << Num2 << endl;
-//	cout << Num1 << endl;
-//
-//
-//	cout << "########################################################\n";
-//	cout << "########################################################\n";
-//
-//	return 0;
-//
-//}
+#include <iostream>
+using namespace std;
+float ReadPositiveNumber(string Message) {
+	float NUM;
+	do {
+		cout << Message;
+		cin >> NUM;
+	} while (NUM < 0);
+	return NUM;
+}
+void ReadRectangleData(float& Hieght, float& Base) {
+	Hieght = ReadPositiveNumber("ENTER Hieght: ");
+	Base = ReadPositiveNumber("ENTER Base: ");
+}
+float CalculateRectangleArea(float  Hieght, float  Base) {
+	return Hieght * Base;
+}
+void PrintRectangleArea(float RectangleArea) {
+	cout << "RectangleArea is " << RectangleArea << endl;
+
+}
+
+
+
+int main() {
+
+	cout << "########################################################\n";
+	cout << "#####################-by-ahmed-mady-####################\n";
+	cout << "########################################################\n";
+	float Hieght;
+	float Base;
+	ReadRectangleData(Hieght, Base);
+	PrintRectangleArea(CalculateRectangleArea(Hieght, Base));
+	cout << "########################################################\n";
+	cout << "########################################################\n";
+
+	return 0;
+
+}
