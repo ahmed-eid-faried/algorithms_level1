@@ -22,8 +22,6 @@ void PrintResult(bool IsAccepted) {
 		cout << "Invalid Age" << endl;
 	}
 }
-
-
 int main() {
 	short int AGE;
 	cout << "########################################################\n";
