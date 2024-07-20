@@ -12,7 +12,7 @@
 //	do {
 //		cout << Message << " FROM " << to_string(From) << " TO " << to_string(To) << ": ";
 //		cin >> NUM;
-//	} while (NUM < From && NUM > To);
+//	} while (NUM < From || NUM > To);
 //	return NUM;
 //}
 //enMarkStatus CheckMark(int Mark) {
