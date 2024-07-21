@@ -11,8 +11,8 @@
 //void PrintResult(int Num, string title) {
 //	cout << title << "====>>> " << Num << endl;
 //}
-//double CalculateNumbersOfMonths(int LoanAmount, int MonthlyPayment) {
-//	return (double)LoanAmount / MonthlyPayment;
+//double CalculateMonthlyAmount(int LoanAmount, int NumbersOfMonths) {
+//	return (double)LoanAmount / NumbersOfMonths;
 //}
 //
 //int main() {
@@ -20,9 +20,10 @@
 //	cout << "#####################-by-ahmed-mady-####################\n";
 //	cout << "########################################################\n";
 //	int LoanAmount = ReadPositiveNumber("ENTER LoanAmount: ");
-//	int MonthlyPayment = ReadPositiveNumber("ENTER MonthlyPayment: ");
-//	PrintResult(CalculateNumbersOfMonths(LoanAmount, MonthlyPayment), "NumbersOfMonths: ");
+//	int NumbersOfMonths = ReadPositiveNumber("ENTER NumbersOfMonths: ");
+//	PrintResult(CalculateMonthlyAmount(LoanAmount, NumbersOfMonths), "Monthly Installment Amount: ");
 //	cout << "########################################################\n";
 //	cout << "########################################################\n";
 //	return 0;
 //}
+//
