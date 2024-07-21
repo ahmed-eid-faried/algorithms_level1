@@ -10,18 +10,24 @@
 //}
 //void CheckATMPassword() {
 //	int ATMPassword = 0;
+//	int counter = 1;
 //	while (true) {
 //		ATMPassword = ReadPositiveNumber("ENTER ATM Password: ");
-//		if (ATMPassword == 1234)
-//		{
+//		if (ATMPassword == 1234) {
 //			system("color 2F");
+//			cout << '\a' << "Your Balance is: 7500" << endl;
 //			break;
 //		}
 //		else {
-//			system("color 4F");
-//		};
+//			system("color 6F");
+//			cout << '\a' << "Wong PIN" << endl;
+//
+//		}
+//		counter++;
+//
+//
+//
 //	}
-//	cout << '\a' << "Your Balance is: 7500" << endl;
 //
 //}
 //
@@ -31,10 +37,7 @@
 //	cout << "########################################################\n";
 //	cout << "#####################-by-ahmed-mady-####################\n";
 //	cout << "########################################################\n";
-//
 //	CheckATMPassword();
-//
-//
 //	cout << "########################################################\n";
 //	cout << "########################################################\n";
 //	return 0;

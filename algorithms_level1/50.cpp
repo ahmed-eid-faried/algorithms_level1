@@ -8,46 +8,40 @@ int  ReadPositiveNumber(string Message) {
 	} while (Num < 0);
 	return Num;
 }
-void CheckATMPassword() {
+void CheckATMPassword3Times() {
 	int ATMPassword = 0;
 	int counter = 1;
 	while (true) {
-		ATMPassword = ReadPositiveNumber("ENTER ATM Password: ");
-		if (ATMPassword == 1234) {
-			system("color 2F");
-			cout << '\a' << "Your Balance is: 7500" << endl;
-			break;
+		if (counter <= 3) {
+			ATMPassword = ReadPositiveNumber("ENTER ATM Password: ");
+			if (ATMPassword == 1234) {
+				system("color 2F");
+				cout << '\a' << "Your Balance is: 7500" << endl;
+				break;
+			}
+			else {
+				system("color 6F");
+				cout << '\a' << "Wong PIN" << endl;
+			}
+			counter++;
 		}
 		else {
-			system("color 6F");
-			cout << '\a' << "Wong PIN" << endl;
-
+			system("color 4F");
+			cout << '\a' << "Card is locked!" << endl;
+			break;
 		}
-		counter++;
-
 
 
 	}
-
 }
 
 
-
-//if (ATMPassword == 1234) {
-//	system("color 2F");
-//	counter++;
-//}
-//else {
-//	system("color 4F");
-//	cout << '\a' << "Your Balance is: 7500" << endl;
-//	break;
-//};
 
 int main() {
 	cout << "########################################################\n";
 	cout << "#####################-by-ahmed-mady-####################\n";
 	cout << "########################################################\n";
-	CheckATMPassword();
+	CheckATMPassword3Times();
 	cout << "########################################################\n";
 	cout << "########################################################\n";
 	return 0;
