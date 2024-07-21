@@ -16,18 +16,17 @@ void PrintPrimeNumber(enPrimeStatus  PrimeStatus, int Num) {
 		cout << "Prime: " << Num << endl;
 	}
 	else {
-		//cout << "Not Prime: " << Num << endl;
-		cout << "";
+		cout << "Not Prime: " << Num << endl;
 	}
 }
 bool CheckEvenNumber(int Num) {
-	return Num % 2 == 0;
+	return Num % 2 == 0 || Num == 0;
 }
-bool CheckNumberIs0or1Or2(int Num) {
-	return(Num == 0 || Num == 1 || Num == 2);
+bool CheckNumberIs1Or2(int Num) {
+	return(Num == 1 || Num == 2);
 }
 enPrimeStatus CheckPrimeNumber(int Num) {
-	if (CheckNumberIs0or1Or2(Num)) {
+	if (CheckNumberIs1Or2(Num)) {
 		return enPrimeStatus::Prime;
 
 	}
@@ -37,7 +36,7 @@ enPrimeStatus CheckPrimeNumber(int Num) {
 		}
 		else
 		{
-			for (int i = 2; i < Num; i++) {
+			for (int i = 2; i < ceil(Num / 2); i++) {
 				if (Num % i == 0) {
 					return enPrimeStatus::NotPrime;
 				}
