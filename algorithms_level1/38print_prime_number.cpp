@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-enum enPrimeStatus { Prime, NotPrime };
+enum enPrimeOrNotPrime { Prime, NotPrime };
 
 int  ReadPositiveNumber(string Message) {
 	int Num;
@@ -10,9 +10,9 @@ int  ReadPositiveNumber(string Message) {
 	} while (Num < 0);
 	return Num;
 }
-void PrintPrimeNumber(enPrimeStatus  PrimeStatus, int Num) {
+void PrintPrimeNumber(enPrimeOrNotPrime  PrimeStatus, int Num) {
 	cout << "---------------------------\n";
-	if (PrimeStatus == enPrimeStatus::Prime) {
+	if (PrimeStatus == enPrimeOrNotPrime::Prime) {
 		cout << "Prime: " << Num << endl;
 	}
 	else {
@@ -25,23 +25,23 @@ bool CheckEvenNumber(int Num) {
 bool CheckNumberIs1Or2(int Num) {
 	return(Num == 1 || Num == 2);
 }
-enPrimeStatus CheckPrimeNumber(int Num) {
+enPrimeOrNotPrime CheckPrimeNumber(int Num) {
 	if (CheckNumberIs1Or2(Num)) {
-		return enPrimeStatus::Prime;
+		return enPrimeOrNotPrime::Prime;
 
 	}
 	else
 		if (CheckEvenNumber(Num)) {
-			return enPrimeStatus::NotPrime;
+			return enPrimeOrNotPrime::NotPrime;
 		}
 		else
 		{
 			for (int i = 2; i < ceil(Num / 2); i++) {
 				if (Num % i == 0) {
-					return enPrimeStatus::NotPrime;
+					return enPrimeOrNotPrime::NotPrime;
 				}
 			}
-			return enPrimeStatus::Prime;
+			return enPrimeOrNotPrime::Prime;
 		}
 }
 
@@ -51,7 +51,7 @@ int main() {
 	cout << "########################################################\n";
 	int Num;
 	Num = ReadPositiveNumber("ENTER POSITIVE NUMBER: ");
-	enPrimeStatus  PrimeStatus = CheckPrimeNumber(Num);
+	enPrimeOrNotPrime  PrimeStatus = CheckPrimeNumber(Num);
 	PrintPrimeNumber(PrimeStatus, Num);
 	cout << "########################################################\n";
 	cout << "########################################################\n";

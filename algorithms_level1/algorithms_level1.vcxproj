@@ -158,7 +158,7 @@
     <ClCompile Include="35.cpp" />
     <ClCompile Include="36.cpp" />
     <ClCompile Include="37.cpp" />
-    <ClCompile Include="38.cpp" />
+    <ClCompile Include="38print_prime_number.cpp" />
     <ClCompile Include="39.cpp" />
     <ClCompile Include="4.cpp" />
     <ClCompile Include="40.cpp" />
